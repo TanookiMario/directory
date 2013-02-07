@@ -15,7 +15,7 @@ describe User do
 
   before do
   	@user = User.new(name: "Example User", email: "user@example.com", 
-                   password: "foobar", password_confirmation: "foobar")
+                   password: "foobar", password_confirmation: "foobar", group: "tech")
   end
   subject { @user }
 
@@ -25,6 +25,7 @@ describe User do
   it { should respond_to(:password) }
   it { should respond_to(:password_confirmation) }
   it { should respond_to(:authenticate) }
+  it { should respond_to(:group) }
 
   it { should be_valid }
 

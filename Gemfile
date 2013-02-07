@@ -4,7 +4,9 @@ gem 'rails', '3.2.11'
 gem 'bootstrap-sass', '2.1'
 gem 'bcrypt-ruby', '3.0.1'
 gem 'factory_girl_rails', '4.1.0'
-gem "paperclip", "~> 3.0"
+gem "paperclip", '=3.0.4'
+gem "cocaine", '=0.3.2'
+# need an rmagick gem for these guys ^^
 
 group :development, :test do
   gem 'sqlite3', '1.3.5'
