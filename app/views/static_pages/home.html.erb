@@ -5,21 +5,20 @@
     You may now stalk that stranger you see in the office
   </h2>
 
-  <%= link_to "Sign In", '#', class: "btn btn-large btn-primary" %>
-</div>
+  <div class="row">
+    <div class="span6 offset3">
+      <%= form_for(:session, url: sessions_path) do |f| %>
 
-<div class="row">
-  <div class="span6 offset3">
-    <%= form_for(:session, url: sessions_path) do |f| %>
+        <%= f.label :email %>
+        <%= f.text_field :email %>
 
-      <%= f.label :email %>
-      <%= f.text_field :email %>
+        <%= f.label :password %>
+        <%= f.password_field :password %>
 
-      <%= f.label :password %>
-      <%= f.password_field :password %>
-
-      <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
-    <% end %>
+        <%= f.submit "Sign in", class: "btn btn-large btn-primary" %>
+      <% end %>
+      <%= link_to "New User? Sign up!", signup_path, class: "btn btn-large" %>
+    </div>
   </div>
 </div>
 
