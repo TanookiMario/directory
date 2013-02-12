@@ -4,10 +4,21 @@
     <section>
       <h1>
         <!%= image_tag @user.avatar.url %>
-		<%= image_tag @user.avatar.url(:medium) %>
-		<!%= image_tag @user.avatar.url(:thumb) %>
-        <%= avatar_for @user %>
-        <%= @user.name %>
+		    <%= image_tag @user.avatar.url(:medium) %>
+		    <!%= image_tag @user.avatar.url(:thumb) %>
+        <!%= avatar_for @user %>
+        <li>
+          <%= @user.name %>
+        </li>
+        <li>
+          <%= @user.email %>
+        </li>
+        <li>
+          <%= "Group: " + @user.group %>
+        </li>
+        <li>
+          <%= "Location: " + (@user.location || "Pittsburgh") %>
+        </li>
       </h1>
     </section>
   </aside>
