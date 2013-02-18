@@ -1,5 +1,5 @@
 class Article < ActiveRecord::Base
 
-	GROUPS = ['tech', 'teacher', 'content', 'sales','marketing']
+	GROUPS = ["Educational Services", "Product Development", "Information Technology", "HR-Finance-Payroll"]
 
 end
