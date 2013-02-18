@@ -17,8 +17,13 @@
           <%= "Group: " + @user.group %>
         </li>
         <li>
-          <%= "Location: " + (@user.location || "Pittsburgh") %>
+          <%= "Location: " + (@user.location || "") %>
         </li>
+        <% if current_user?(@user) %>
+          <li>
+            <%= link_to "Edit Profile", edit_user_path(current_user) %>
+          </li>
+        <% end %>
       </h1>
     </section>
   </aside>
