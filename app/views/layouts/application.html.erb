@@ -8,9 +8,6 @@
     <%= render 'layouts/shim' %> 
   </head>
   <body>
-    <% if flash[:error] %>
-      <p class="error"><%= flash[:error] %></p>
-    <% end %>
     <%= render 'layouts/header' %>
     <div class="container">
       <%= yield %>

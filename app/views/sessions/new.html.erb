@@ -5,6 +5,10 @@
     You may now stalk that stranger you see in the office
   </h2>
 
+  <% if flash[:error] %>
+      <p class="error"><%= flash[:error] %></p>
+  <% end %>
+
   <div class="row">
     <div class="span6 offset3">
       <%= form_for(:session, url: sessions_path) do |f| %>
