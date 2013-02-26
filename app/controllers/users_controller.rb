@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-  before_filter :signed_in_user, only: [:edit, :update, :show]
+  before_filter :signed_in_user, only: [:edit, :update, :show, :index]
   before_filter :correct_user,   only: [:edit, :update]
 
   def new
@@ -7,6 +7,10 @@ class UsersController < ApplicationController
   end
 
   def edit
+  end
+
+  def index
+    @users = User.paginate(page: params[:page])
   end
 
   def show

@@ -1,12 +1,14 @@
 <header class="navbar navbar-fixed-top navbar-inverse">
   <div class="navbar-inner">
     <div class="container">
-      <!%= link_to image_tag("ttm-logo.png", alt: "TTM"), 'http://thinkthroughmath.com/', id: "logo" %>
+      <div class="header-text">
+        <h2>TTM Directory<h2>
+      </div>
       <nav>
         <ul class="nav pull-right">
           <% if signed_in? %>
-            <li><%= link_to "Directory", '#' %></li>
-            <li><%= link_to "Home", user_path(current_user) %></li>
+            <li><%= link_to "Directory", users_path %></li>
+            <li><%= link_to "Profile", user_path(current_user) %></li>
             <li><%= link_to "Sign out", signout_path, method: "delete" %></li>
           <% end %>
         </ul>

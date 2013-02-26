@@ -7,6 +7,7 @@ gem 'factory_girl_rails', '4.1.0'
 gem "paperclip", '=3.0.4'
 gem "cocaine", '=0.3.2'
 gem 'rmagick'
+gem 'will_paginate', '3.0.3'
 # need an rmagick gem for these guys ^^
 
 group :development, :test do

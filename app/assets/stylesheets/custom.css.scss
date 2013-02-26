@@ -75,6 +75,20 @@ letter-spacing: -1px;
   text-align: center;
 }
 
+.header-text h2 {
+  font-size: 1.7em;
+  letter-spacing: -1px;
+  margin-bottom: -29px;
+  margin-top: 5px;
+  text-align: left;
+  font-weight: normal;
+  color: $orange;
+}
+
+.navbar-inverse .brand, .navbar-inverse .nav > li > a {
+  color: $orange;
+}
+
 /* sidebar */
 
 aside {
@@ -137,32 +151,20 @@ select, input[type="file"] {
   @extend .error;
  }
 
-/*.error {
-  color: #f00;
-  text-align: center;
-  ul {
-    list-style: none;
-    margin: 0 0 18px 0;
+/* users index */
+
+.users {
+  list-style: none;
+  margin: 0;
+  li {
+    overflow: auto;
+    padding: 10px 0;
+    border-top: 1px solid $grayLighter;
+    &:last-child {
+      border-bottom: 1px solid $grayLighter;
+    }
   }
- }*/
-
-
-/* header */
-/*.navbar-inner{
-  background:transparent !important;
 }
-.navbar-inner container{
-  background:transparent !important;
-}
-.navbar{
-  background:transparent !important;
-}
-#nav-main{
-  background:transparent !important;
-}
-#banner{
-  background:transparent !important;
-}​*/
 
 img {
 	horizontal-align: middle;
