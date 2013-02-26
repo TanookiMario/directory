@@ -12,7 +12,7 @@
     </li> -->
 		<%= image_tag user.avatar.url(:small) %>
         <li>
-          <%= user.name %>
+          <%= link_to user.name, user%>
         </li>
         <li>
           <%= user.email %>
