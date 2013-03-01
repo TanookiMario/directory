@@ -4,26 +4,25 @@
 <%= will_paginate %>
 
 <ul class="users">
+  <div id="parent">
   <% @users.each do |user| %>
-    <!-- <li>
-      <%= image_tag user.avatar.url(:thumb) %>
-      <%= link_to user.name, user %>
-      <%= link_to user.email, user%>
-    </li> -->
+  <div>
 		<%= image_tag user.avatar.url(:small) %>
-        <li>
-          <%= link_to user.name, user%>
-        </li>
-        <li>
-          <%= user.email %>
-        </li>
-        <li>
-          <%= "Group: " + user.group %>
-        </li>
-        <li>
-          <%= "Location: " + (user.location || "") %>
-        </li>
+    <li>
+      <%= link_to user.name, user%>
+    </li>
+    <li>
+      <%= user.email %>
+    </li>
+    <li>
+      <%= "Group: " + user.group %>
+    </li>
+    <li>
+      <%= "Location: " + (user.location || "") %>
+    </li>
+  </div>
   <% end %>
+</div>
 </ul>
 
 <%= will_paginate %>
