@@ -79,14 +79,25 @@ letter-spacing: -1px;
   font-size: 1.7em;
   letter-spacing: -1px;
   margin-bottom: -29px;
-  margin-top: 5px;
+  margin-top: 7px;
   text-align: left;
   font-weight: normal;
-  color: $orange;
+}
+
+
+span.blueT{
+  color: rgb(0,168,188);
+}
+span.orange{
+  color: rgb(244,78,39);
+  margin-left: -6px;
+}
+span.blueD{
+  color: rgb(0,168,188);
 }
 
 .navbar-inverse .brand, .navbar-inverse .nav > li > a {
-  color: $orange;
+  color: rgb(0,168,188);
 }
 
 /* sidebar */
@@ -160,6 +171,12 @@ select, input[type="file"] {
     float: left;
     width: 30%;
     margin: 1.5%;
+  }
+  li {
+    margin:0; 
+    padding:0; 
+    list-style:none;
+    border-top: none;
   }
 }
 
